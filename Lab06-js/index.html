@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="el">
+  <head>
+    <meta charset="utf-8">
+    <title>Εταιρεία Demo - Επίσημη Ιστοσελίδα</title>
+	
+
+	<style>
+	
+	/*Lab04-PartA */
+    body { font-family: Arial, sans-serif; line-height: 1.6; color: #222; background-color: #fafafa; margin: 0 5px; }
+	h2 { color: #003366; }
+	p { margin-bottom: 1rem; }
+	
+	/*Lab04-PartB */
+	ul { padding-left: 1.5rem; }
+	nav a { color: #fff; text-decoration: none;}
+	nav  a:hover { text-decoration: underline; }
+	table {  width: 100%; margin: 1rem 0; }
+	caption {font-size: 1.2 rem; font-weight: 700;}
+	th, td { border: 1px solid #ccc; padding: 0.5rem; text-align: left; }
+	th { background-color: #e0e0e0; }
+	blockquote { font-style: italic; color: #555; border-left: 4px solid #ccc; padding-left: 1rem; }
+	
+	/*Lab04-PartC */
+	section { background: #fff; border: 1px solid #ddd; margin: 1rem auto; padding: 1rem 1.5rem; width: 90%; box-sizing: border-box; }
+	header, footer { background: #003366; color: #fff; padding: 1rem; text-align: center;}
+	footer{ margin-top: 20px; }
+	video { display:block; width: 50%; height: auto; border: 1px solid #ccc; margin: 0 auto; padding: 4px; }
+  
+	/*Lab05-PartA */
+	#about img {
+		float: right;
+		width: 260px;
+		margin: 0 0 1rem 1rem;
+		border: 1px solid #ccc;
+		padding: .25rem;
+	}
+	.clearfix::after {
+		content:"";
+		display:block;
+		clear:both;
+	}
+	
+	/*Lab05-PartΒ */
+	.hero {
+		background-image: url("images/nature.jpg");
+		background-size: cover;
+		background-position: center;
+		color: #fff;
+		text-align: center;
+		padding: 2rem 1rem;
+		margin-top: 1rem;
+	}
+	
+	.hero h2{color: #fff;}
+	
+	.cta {
+		display: inline-block;
+		background: #145a86;
+		color: #fff;
+		padding: .5rem 1rem;
+		text-decoration: none;
+		border-radius: 4px;
+		margin-top: 0.5rem;
+	}
+	
+	.cta:hover {
+		background: #0f4c70;
+	}
+
+	/*Lab05-PartC */
+	#services {
+		position: relative;
+	}
+	
+	.badge {
+		position: absolute;
+		top: -10px;
+		right: -10px;
+		background: #e74c3c;
+		color: #fff;
+		padding: .25rem .5rem;
+		font-size: 0.8rem;
+		border-radius: 4px;
+	}
+	
+	.back-to-top {
+		position: fixed;
+		bottom: 20px;
+		right: 20px;
+		background: #145a86;
+		color: #fff;
+		padding: .5rem .75rem;
+		text-decoration: none;
+		border-radius: 4px;
+		font-size: 0.9rem;
+		opacity: 0.8;
+	}
+	.back-to-top:hover {
+	opacity: 1;
+	background: #0f4c70;
+	}
+
+	/*Lab05-PartD */
+	header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 1000;
+	}
+	body {
+		padding-top: 135px; /* για να μην καλύπτεται το περιεχόμενο */
+	}
+	section {
+		scroll-margin-top: 160px; /* για να μην καλύπτεται το περιεχόμενο κατά την κύλιση */
+	} 
+</style> 
+	
+  </head>
+  <body>
+    <header id="top">
+      <h1>Εταιρεία Demo</h1>
+      <nav>
+        <a href="#about">Σχετικά</a> |
+        <a href="#services">Υπηρεσίες</a> |
+        <a href="#vision">Όραμα</a> |
+        <a href="#mission">Αποστολή</a> |
+        <a href="#pricing">Τιμές</a> |
+        <a href="contact.html">Επικοινωνία</a> |
+        <a href="promo.html">Βίντεο</a> |
+		<a href="#media">Παρουσίαση</a>
+      </nav>
+    </header>
+  
+  <!--Αυτη η ενότητα δημιοργήθηκε στο μέρος Β του lab05-->
+  <div class="hero">
+	<h2>Καλωσήρθατε στην Εταιρεία Demo</h2>
+	<p>Η τεχνολογία και η δημιουργικότητα συναντούν την καινοτομία.</p>
+	<a href="contact.html" class="cta">Επικοινωνήστε μαζί μας</a>
+  </div>
+
+  <!--Η φωτογραφία μαζί με το claerfix χρησιμοποιήθηκαν στο μέρος Β του Lab05-->
+  <section id="about" class="clearfix">
+    <h2>Σχετικά με εμάς</h2>
+	<img src="images/nature.jpg" alt="Τυχαία εικόνα"> 
+    <p>Η <strong>Εταιρεία Demo</strong> είναι μια ομάδα επαγγελματιών που συνδυάζει τεχνολογία, δημιουργικότητα και υπευθυνότητα. 
+    Δημιουργούμε λύσεις που βελτιώνουν την καθημερινή ζωή και υποστηρίζουν την πρόοδο των ανθρώπων και των οργανισμών.</p>
+  </section>
+
+  <section id="services">
+  <!--Αυτό το span χρησιμοποιήθηκε στο μέρος Γ του lab05-->
+  <span class="badge">ΝΕΟ</span>
+    <h2>Υπηρεσίες</h2>
+    <ul>
+      <li>Συμβουλευτική &amp; Εκπαίδευση</li>
+      <li>Ψηφιακό Μάρκετινγκ</li>
+      <li>Ανάπτυξη Εφαρμογών &amp; Ιστοσελίδων</li>
+    </ul>
+  </section>
+
+<section id="vision">
+    <h2>Όραμα</h2>
+    <p>Στο κέντρο της φιλοσοφίας μας βρίσκεται η επιδίωξη να δημιουργούμε έναν κόσμο όπου η καινοτομία, η βιωσιμότητα και ο άνθρωπος συνυπάρχουν αρμονικά, προσφέροντας λύσεις που βελτιώνουν την καθημερινή ζωή και το μέλλον του πλανήτη.</p>
+    <blockquote>Όπως συνηθίζουμε να λέμε, <q>το μέλλον δεν το προβλέπεις, το δημιουργείς</q>.</blockquote>
+</section>
+
+<section id="mission">
+    <h2>Αποστολή</h2>
+    <p>Η αποστολή μας είναι να αναπτύσσουμε προϊόντα και υπηρεσίες υψηλής ποιότητας που συνδυάζουν τεχνολογία, δημιουργικότητα και υπευθυνότητα, προσφέροντας αξία στους πελάτες, στους εργαζομένους και στην κοινωνία.</p>
+    <blockquote>Πιστεύουμε βαθιά πως <q>η επιτυχία μιας εταιρίας αντικατοπτρίζεται στην επιτυχία των ανθρώπων της</q>.</blockquote>
+</section>
+
+<section id="pricing">
+    <h2>Τιμοκατάλογος</h2>
+    <table border="1">
+      <caption>Ενδεικτικές υπηρεσίες και τιμές</caption>
+      <thead>
+        <tr><th>Υπηρεσία</th><th>Τιμή</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Συμβουλευτική</td><td>€100</td></tr>
+        <tr><td>Κατασκευή Ιστοσελίδας</td><td>€900</td></tr>
+        <tr><td>Υποστήριξη / Συντήρηση</td><td>€50 / μήνα</td></tr>
+      </tbody>
+    </table>
+</section>
+
+<section id="media">
+<h2>Πολυμέσα</h2>
+
+<h3>Εταιρικό βίντεο</h3>
+<video controls>
+  <source src="videos/wingsuit.mp4" type="video/mp4">
+  Ο φυλλομετρητής σας δεν υποστηρίζει αναπαραγωγή βίντεο.
+</video>
+
+<h3>Ηχητικό μήνυμα</h3>
+<audio controls>
+  <source src="sound/Sleep_Away.mp3" type="audio/mpeg">
+  Ο φυλλομετρητής σας δεν υποστηρίζει ήχο.
+</audio>
+
+<h3>Παρουσίαση στο YouTube</h3>
+<iframe width="560" height="315"
+  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+  title="Εταιρική παρουσίαση"
+  allowfullscreen>
+</iframe>
+</section>
+
+ <footer>
+    <small>&copy; 2025 Εταιρεία Demo — Όλα τα δικαιώματα διατηρούνται.</small>
+ </footer>
+ 
+  <!--Αλλάζω το id-στόχο με το # που με πάει στην αρχή της σελίδας για το μέρος Δ του Lab05-->
+<a href="#" class="back-to-top">⬆ Επιστροφή στην αρχή</a>
+<script>
+// απλό sanity check
+ console.log("JS ενεργή.");
+ alert("Καλωσορίσατε στη διαδραστική έκδοση της σελίδας!");
+</script>
+ </body>
+  
+</html>

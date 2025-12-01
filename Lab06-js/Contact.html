@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="el">
+  <head>
+    <meta charset="utf-8">
+    <title>Εταιρεία Demo - Επικοινωνία</title>
+    <style>
+      body { font-family: Arial, sans-serif; line-height: 1.6; color: #222; background-color: #fafafa; margin: 0 5px; }
+       h1 { color: #fff; } 
+	  h2 { color: #003366; }
+      p { margin-bottom: 1rem; }
+      /* γενικά links */
+      a { color: #0056b3; text-decoration: none; }
+      a:hover { text-decoration: underline; }
+
+      /* μενού */
+      header { background: #003366; color: #fff; padding: 1rem; }
+      header nav a { color: #fff; margin: 0 .5rem; }
+      header nav a:hover { text-decoration: underline; }
+
+      /* «περιοχή» περιεχομένου */
+      .container { background: #fff; border: 1px solid #ddd; margin: 1rem auto; padding: 1rem 1.5rem; width: 90%; box-sizing: border-box; }
+
+      /* φόρμα επικοινωνίας */
+      form { max-width: 640px; }
+      label { display: inline-block; margin-bottom: .25rem; font-weight: 600; }
+      input[type="text"], input[type="email"], select, textarea {
+        width: 100%; padding: .5rem; border: 1px solid #ccc; box-sizing: border-box;
+      }
+      textarea { min-height: 120px; }
+      .actions { margin-top: .75rem; }
+      button {
+        background: #145a86; color: #fff; border: 0; padding: .5rem 1rem; cursor: pointer;
+      }
+      button:hover, button:focus { background: #0f4c70; }
+      footer { background: #003366; color: #fff; padding: 1rem; margin-top: 20px; text-align: center; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Εταιρεία Demo</h1>
+      <nav>
+        <a href="index.html#about">Σχετικά</a> |
+        <a href="index.html#services">Υπηρεσίες</a> |
+        <a href="index.html#vision">Όραμα</a> |
+        <a href="index.html#mission">Αποστολή</a> |
+        <a href="index.html#pricing">Τιμές</a> |
+        <a href="contact.html">Επικοινωνία</a> |
+        <a href="promo.html">Βίντεο</a>
+      </nav>
+    </header>
+
+    <div class="container">
+      <h2 id="contact">Επικοινωνία</h2>
+      <form action="#" method="post">
+        <p>
+          <label for="name">Όνομα</label>
+          <input type="text" id="name" name="name" required>
+        </p>
+        <p>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </p>
+        <p>
+          <label for="topic">Θέμα επικοινωνίας</label>
+          <select id="topic" name="topic">
+            <option>Γενική Ερώτηση</option>
+            <option>Συνεργασία</option>
+            <option>Υποστήριξη</option>
+          </select>
+        </p>
+        <p>
+          <label for="msg">Μήνυμα</label>
+          <textarea id="msg" name="message"></textarea>
+        </p>
+        <p>
+          <label><input type="checkbox" name="agree" required> Αποδέχεστε τους όρους</label>
+        </p>
+        <div class="actions">
+          <button type="submit">Αποστολή</button>
+          <button type="reset">Καθαρισμός</button>
+          <a href="index.html" style="margin-left:.5rem;"><button type="button">⬅ Επιστροφή</button></a>
+        </div>
+      </form>
+    </div>
+
+    <footer>
+      <small>&copy; 2025 Εταιρεία Demo — Όλα τα δικαιώματα διατηρούνται.</small>
+    </footer>
+  </body>
+</html>
